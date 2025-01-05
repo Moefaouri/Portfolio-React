@@ -1,0 +1,30 @@
+/* Extra Small Devices (Phones, Portrait) */
+@media (max-width: 575px) {
+    /* Styles for phones */
+  }
+  
+  /* Small Devices (Phones, Landscape) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    /* Styles for small phones */
+  }
+  
+  /* Medium Devices (Tablets, Portrait) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for tablets */
+  }
+  
+  /* Large Devices (Tablets, Landscape / Small Laptops) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for laptops */
+  }
+  
+  /* Extra Large Devices (Laptops and Desktops) */
+  @media (min-width: 1200px) {
+    /* Styles for desktops */
+  }
+  
+  /* Ultra Large Devices (Large Desktops) */
+  @media (min-width: 1400px) {
+    /* Styles for large desktops */
+  }
+  
