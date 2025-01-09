@@ -2,17 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/reset.css";
-import "../styles/globals.css";
-import "../styles/media.css"
+
 
 const Nav = () => {
   const router = useRouter();
 
-  useEffect(() => {
-    import("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
+
 
   const isActive = (path) => router.pathname === path;
   return (

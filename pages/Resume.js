@@ -257,8 +257,8 @@ const Resume = () => {
                       </div>
                       <p class="p-styling">
                         The graduation project involves developing a specialized
-                        program for Android devices called a "battery saving
-                        application" that conserves the device's battery through
+                        program for Android devices called a &quot;battery saving
+                        application&quot; that conserves the device&apos;s battery through
                         various functionalities.
                       </p>
                     </div>

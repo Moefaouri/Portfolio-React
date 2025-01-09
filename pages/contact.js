@@ -59,7 +59,7 @@ const Contact = () => {
               </div>
               <p className=" mt-2 p-styling">
                 If you are going to use a passage of Lorem Ipsum, you need to be
-                sure there isn't anything embarrassing hidden in the middle of
+                sure there isn&apos;t anything embarrassing hidden in the middle of
                 text.
               </p>
             </div>

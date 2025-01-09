@@ -69,7 +69,7 @@ const About = () => {
     const interval = setInterval(incrementStatics, 50);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [[roles, statics]]);
 
   return (
     <div className="container">
@@ -77,10 +77,10 @@ const About = () => {
       <div className="main-content pt-120 pb-60 mt-10 ">
         <div className="d-flex flex-wrap gap-9 gap-md-12 align-items-center justify-content-between">
           <div className="introduction align-items-center ms-60">
-            <h3>HI, I'M A FREELANCER</h3>
+            <h3>HI, I&apos;M A FREELANCER</h3>
             <h1 className="intro-role">{text}</h1>
             <p className="p-controller intro-desc">
-              I'm a software engineer specializing in scalable web apps.Explore
+              I&apos;m a software engineer specializing in scalable web apps.Explore
               <Link href="/Portfolio" className="intro-link" passHref>
                 project portfolio
               </Link>
