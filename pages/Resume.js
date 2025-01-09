@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Resume = () => {
   return (
-    <div>
+    <div cla>
       <Nav />
       <div className="main-content pt-120 pb-60 mt-10">
         <div className="pb-60 br-bottom-n3">
@@ -17,8 +17,8 @@ const Resume = () => {
               passHref
             >
               <svg
-                stroke="#5271ff"
-                fill="#5271ff"
+                stroke="#ffffff"
+                fill="#ffffff"
                 stroke-width="0"
                 viewBox="0 0 256 256"
                 height="1em"
@@ -48,7 +48,7 @@ const Resume = () => {
                       FRONT-END DEVELOPER & UI/UX DESIGNER
                     </span>
                   </div>
-                  <div class="ps-5 br-left-n3 info">
+                  <div class="ps-5 br-left-n3 info ps-xs">
                     <ul class="d-flex flex-column gap-3">
                       <li>
                         <a
@@ -138,8 +138,8 @@ const Resume = () => {
                 </div>
 
                 <div className="resume-section row pt-60 pb-60 br-bottom-n3">
-                  <div class="col-md-8 col-lg-12 col-xl-8 col-xxl-9">
-                    <div class="d-flex align-items-center gap-2 mb-5 mb-md-10">
+                  <div class="col-12 col-md-8">
+                    <div class="d-flex align-items-center gap-2 mb-5 mb-md-10 mb-2">
                       <div class="title-line2"></div>
                       <h2 class="h2-style">Work Experiences</h2>
                     </div>
@@ -263,7 +263,7 @@ const Resume = () => {
                       </p>
                     </div>
                   </div>
-                  <div class="col-md-4 col-lg-12 col-xl-4 col-xxl-3">
+                  <div class="col-12 col-md-4">
                     <div class="ps-4 ps-xxl-7 br-left-n3 mt-5 mt-md-0">
                       <div class="mb-8 mb-md-15">
                         <div class="d-flex align-items-center gap-2 mb-5 mb-md-10">
@@ -336,7 +336,7 @@ const Resume = () => {
                       <div class="mb-8 mb-md-15">
                         <div class="d-flex align-items-center gap-2 mb-3 mb-md-6 mt-5">
                           <div class="title-line2"></div>
-                          <h2 class="h2-style">CERTIFICATES</h2>
+                          <h2 class="h2-style">Courses</h2>
                         </div>
                         <div class="d-flex gap-2 mb-3 mb-md-5">
                           <i class=" fs-six p1-color">

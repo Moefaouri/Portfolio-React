@@ -29,8 +29,8 @@ const Contact = () => {
   return (
     <div>
       <Nav />
-      <div className="main-content pt-120 pb-60 mt-10">
-        <div className="pb-60 br-bottom-n3">
+      <div className="main-content pt-120 pb-60 mt-10 ">
+        <div className="pb-60 br-bottom-n3 responsive">
           <header class="text-center page-heading">
             <h3 class=""> Contact </h3>
             <p class="p-controller mb-4-l">
@@ -43,8 +43,9 @@ const Contact = () => {
           </header>
         </div>
 
-        <div className="container mt-8 mt-md-15">
+        <div className="container mt-8 mt-md-15  jj">
           <div
+          className="d-flex  align-items-center-res flex-column"
             style={{
               opacity: 1,
               transform: "none",
@@ -132,7 +133,7 @@ const Contact = () => {
             </div>
             <div
               style={{ width: "80vw", height: "45vh", margin: 0, padding: 0 }}
-              className="ms-4 my-5"
+              className="location-container ms-4 my-5"
             >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d269190.55418764945!2d36.11243843621581!3d31.83594582566714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5fb85d7981af%3A0x631c30c0f8dc65e8!2z2LnZhdmR2KfZhg!5e1!3m2!1sar!2sjo!4v1735980129028!5m2!1sar!2sjo"
@@ -155,11 +156,11 @@ const Contact = () => {
                 do not hesitate to contact me via email.
               </p>
             </div>
-            <div
+            <div className="contact-form"
               style={{ width: "80vw", height: "45vh", margin: 0, padding: 0 }}
             >
               <form
-                className="mt-8 mt-md-15 p-3 rounded-5 "
+                className="mt-8 mt-4 mt-md-15 p-3 rounded-5 "
                 onSubmit={handleSubmit}
               >
                 {/* Input Fields */}

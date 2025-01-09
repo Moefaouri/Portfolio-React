@@ -94,9 +94,9 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <section className="mt-8 mt-md-15 ">
+          <section className="mt-8 mt-md-15 d-flex align-items-center-res flex-column wrapper">
             <div className="row br-bottom-n3 max">
-              <div className="col-sm-6 col-xl-4  ">
+              <div className=" col-sm-12 col-md-6  col-xxl-4 service-con    ">
                 <div
                   style={{
                     opacity: 1,
@@ -140,7 +140,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Responsive Design Creation
                         </span>
                       </li>
@@ -158,7 +158,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Interactive UI Components
                         </span>
                       </li>
@@ -176,7 +176,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Performance Optimization
                         </span>
                       </li>
@@ -194,7 +194,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Cross-Browser Compatibility
                         </span>
                       </li>
@@ -212,7 +212,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Integration with Backend Systems
                         </span>
                       </li>
@@ -237,7 +237,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-6 col-xl-4 service-con">
+              <div className=" col-sm-12 col-md-6  col-xxl-4 service-con  ">
                 <div
                   style={{
                     opacity: 1,
@@ -279,7 +279,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           User Interface (UI) Design
                         </span>
                       </li>
@@ -297,7 +297,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           User Experience (UX) Research and Analysis
                         </span>
                       </li>
@@ -315,7 +315,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Wireframing and Prototyping
                         </span>
                       </li>
@@ -333,7 +333,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Responsive and Accessible Design
                         </span>
                       </li>
@@ -351,7 +351,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Usability Testing and Optimization
                         </span>
                       </li>
@@ -376,7 +376,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>{" "}
-              <div className="col-sm-6 col-xl-4 service-con">
+              <div className=" col-sm-12 col-md-6  col-xxl-4 service-con  ">
                 <div
                   style={{
                     opacity: 1,
@@ -420,7 +420,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Functional Testing
                         </span>
                       </li>
@@ -438,7 +438,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">Usability Testing</span>
+                        <span className="resume-career service-desc">Usability Testing</span>
                       </li>
                       <li className="d-flex gap-3 align-items-center mb-3">
                         <i className="">
@@ -454,7 +454,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Regression Testing
                         </span>
                       </li>
@@ -472,7 +472,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Defect Identification and Reporting
                         </span>
                       </li>
@@ -490,7 +490,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Cross-Platform Testing
                         </span>
                       </li>
@@ -515,7 +515,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-6 col-xl-4 service-con">
+              <div className=" col-sm-12 col-md-6  col-xxl-4 service-con  ">
                 <div
                   style={{
                     opacity: 1,
@@ -559,7 +559,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Data Cleaning and Preparation
                         </span>
                       </li>
@@ -577,7 +577,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Trend and Pattern Identification
                         </span>
                       </li>
@@ -595,7 +595,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Visualization and Reporting
                         </span>
                       </li>
@@ -613,7 +613,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Statistical Analysis
                         </span>
                       </li>
@@ -631,7 +631,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Predictive Analysis
                         </span>
                       </li>
@@ -656,7 +656,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-6 col-xl-4 service-con">
+              <div className=" col-sm-12 col-md-6  col-xxl-4 service-con  ">
                 <div
                   style={{
                     opacity: 1,
@@ -700,7 +700,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Strategic Planning
                         </span>
                       </li>
@@ -718,7 +718,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Team Leadership and Coordination
                         </span>
                       </li>
@@ -736,7 +736,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Project Management
                         </span>
                       </li>
@@ -754,7 +754,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Performance Monitoring
                         </span>
                       </li>
@@ -772,7 +772,7 @@ const Services = () => {
                             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         </i>
-                        <span className="resume-career">
+                        <span className="resume-career service-desc">
                           Problem-Solving and Decision-Making
                         </span>
                       </li>
@@ -904,11 +904,12 @@ const Services = () => {
                     ))}
                   </div>
 
-                  <div className="col-6 col-md-6 faq-img">
+                  <div className="col-12 col-md-6 faq-img">
                     <Image
                       src="/images/light.webp"
                       width={526}
                       height={657}
+                      className="img-fluid"
                       alt="my image"
                     />
                   </div>

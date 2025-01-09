@@ -80,7 +80,7 @@ const About = () => {
             <h3>HI, I'M A FREELANCER</h3>
             <h1 className="intro-role">{text}</h1>
             <p className="p-controller intro-desc">
-              I'm a software engineer specializing in scalable web apps. Explore
+              I'm a software engineer specializing in scalable web apps.Explore
               <Link href="/Portfolio" className="intro-link" passHref>
                 project portfolio
               </Link>
@@ -92,7 +92,7 @@ const About = () => {
             <div className="d-flex flex-wrap align-items-center gap-3 gap-md-6 mt-5 mt-md-8">
               <Link
                 href="/Portfolio"
-                className="p-btn  btn-primary px-4 py-4 rounded-pill d-flex align-items-center gap-2"
+                className="p-btn btn-primary px-4 py-4 rounded-pill d-flex align-items-center gap-2"
                 passHref
               >
                 <svg
@@ -110,7 +110,7 @@ const About = () => {
               </Link>
               <Link
                 href="/Resume"
-                className="p-btn  btn-secondary px-4 py-4 rounded-pill d-flex align-items-center gap-2"
+                className="p-btn btn-secondary px-4 py-4 rounded-pill d-flex align-items-center gap-2"
                 passHref
               >
                 <svg
@@ -139,8 +139,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="pt-120 br-bottom-n3 pb-60">
-          <div className="Statics ms-60">
+        <div className="pt-120 br-bottom-n3 pb-60 pt-xs">
+          <div className="Statics ms-60 ">
             <div className="Statics-content d-flex flex-wrap flex-xl-nowrap align-items-center gap-3 mt-10  ">
               {statics.map((stat) => (
                 <div key={stat.id} className="d-flex align-items-center gap-2 gap-xl-4">

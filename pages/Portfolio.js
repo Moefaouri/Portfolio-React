@@ -94,7 +94,7 @@ const Portfolio = () => {
               tabindex="0"
             >
               <div className="row">
-                <div className="col-6 mt-3">
+                <div className="col-12 col-md-6   mt-3">
                   <div
                     style={{
                       opacity: 1,
@@ -175,7 +175,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-6 mt-3">
+                <div className="col-12 col-md-6   mt-3">
                   <div
                     style={{
                       opacity: 1,
@@ -256,7 +256,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-6 mt-3">
+                <div className="col-12 col-md-6   mt-3">
                   <div
                     style={{
                       opacity: 1,
@@ -347,7 +347,7 @@ const Portfolio = () => {
               tabindex="0"
             >
               <div className="row">
-                <div className="col-6 mt-3">
+                <div className="col-12 col-md-6   mt-3">
                   <div
                     style={{
                       opacity: 1,
@@ -428,7 +428,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-6 mt-3">
+                <div className="col-12 col-md-6   mt-3">
                   <div
                     style={{
                       opacity: 1,
@@ -509,7 +509,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-6 mt-3">
+                <div className="col-12 col-md-6   mt-3">
                   <div
                     style={{
                       opacity: 1,

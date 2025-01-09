@@ -1,30 +1,562 @@
-/* Extra Small Devices (Phones, Portrait) */
-@media (max-width: 575px) {
-    /* Styles for phones */
+@media (1400px <=width <=1850px) {
+  .introduction {
+    width: 650px;
   }
-  
-  /* Small Devices (Phones, Landscape) */
-  @media (min-width: 576px) and (max-width: 767px) {
-    /* Styles for small phones */
+
+  .intro-role {
+    font-size: 60px;
+    height: 75px;
   }
-  
-  /* Medium Devices (Tablets, Portrait) */
-  @media (min-width: 768px) and (max-width: 991px) {
-    /* Styles for tablets */
+
+  .navigation__nav {
+    width: 20% !important;
+    height: 100% !important;
   }
-  
-  /* Large Devices (Tablets, Landscape / Small Laptops) */
-  @media (min-width: 992px) and (max-width: 1199px) {
-    /* Styles for laptops */
+
+  .container {
+    min-width: 80%;
+
   }
-  
-  /* Extra Large Devices (Laptops and Desktops) */
-  @media (min-width: 1200px) {
-    /* Styles for desktops */
+
+  .main-content {
+    width: 100%;
+    margin-left: 20%;
   }
-  
-  /* Ultra Large Devices (Large Desktops) */
-  @media (min-width: 1400px) {
-    /* Styles for large desktops */
+
+  .max {
+    max-width: 100% !important;
   }
-  
+
+  .service-name {
+    font-size: 28px
+  }
+
+  .icon svg {
+    width: 40px;
+  }
+
+}
+
+@media (1200px <=width <=1399px) {
+  .container {
+    min-width: 77%;
+
+  }
+
+  .navigation__list {
+    margin-block: 1rem !important;
+  }
+
+  .max {
+    max-width: 100%;
+  }
+
+  .main-content {
+    margin-left: 23%;
+
+  }
+
+  .main-content:has(.location-container) {
+    height: calc-size(auto, size + 250px);
+  }
+
+  .navigation__nav {
+    width: 23% !important;
+  }
+
+  .profile-img {
+    height: 400px;
+    width: 100vw;
+    margin-block: 30px;
+    margin-top: 50px;
+
+  }
+
+  .user-bg,
+  .user-img {
+    top: 50%;
+    translate: -50% -50%;
+    left: 50%;
+    width: 280px;
+    height: 350px;
+  }
+
+  .pt-120 {
+    padding-top: 50px;
+  }
+
+  .Statics-content {
+    margin-top: 0;
+  }
+
+  .page-heading,
+  .section-heading {
+    width: fit-content;
+  }
+
+  .service-name {
+    font-size: 36px;
+  }
+
+  .resume-career {
+    font-size: 15px;
+  }
+
+  .location-container,
+  .contact-form {
+    width: 70vw !important;
+  }
+
+  .responsive {
+    margin-left: 1rem !important;
+
+  }
+
+  .icon svg {
+    width: 48px;
+  }
+}
+
+@media (768px <=width <=1199px) {
+
+  /* Styles for tablets */
+  .container {
+    height: calc-size(auto, size + 60px);
+  }
+
+  .jj {
+    height: calc-size(auto, size + 250px);
+  }
+
+  .navigation__nav {
+    visibility: hidden;
+    opacity: 0;
+    margin-left: -100%;
+  }
+
+  .nav-small {
+    display: block !important;
+    left: 0;
+    padding: 0.5rem !important;
+    z-index: 1000;
+  }
+
+  .navigation__item {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .main-content {
+    margin: 0 !important;
+  }
+
+  .profile-img {
+    height: 400px;
+    width: 100vw;
+    margin-block: 30px;
+  }
+
+  .user-bg,
+  .user-img {
+    top: 50%;
+    translate: -50% -50%;
+    left: 50%;
+    width: 280px;
+    height: 350px;
+  }
+
+  .p-btn {
+    font-size: 14px;
+    padding: 18px !important;
+  }
+
+  .p-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .pt-120 {
+    padding-top: 50px;
+  }
+
+  .intro-role {
+    height: 70px;
+    font-size: 58px;
+  }
+
+  .Statics-content {
+    margin-top: 0;
+  }
+
+  .value {
+    font-size: 46px;
+  }
+
+  .Statics-content {
+    gap: 1.5rem !important;
+  }
+
+  .br-bottom-n3:has(.Statics) {
+    padding-top: 20px !important;
+    padding-bottom: 40px !important;
+
+  }
+
+  .navigation__item {
+    gap: 1rem !important;
+    padding: 1rem !important;
+  }
+
+  .navigation__link {
+    padding: 0 !important;
+    gap: 0 !important;
+    color: rgb(41, 41, 41);
+  }
+
+  .navigation__link:hover {
+    background-color: unset;
+    transition: none;
+    border-radius: unset;
+    color: var(--color-primary);
+  }
+
+  .navigation__link.active:hover {
+    color: var(--color-white);
+  }
+
+  .navigation__link:hover svg {
+    fill: var(--color-primary);
+    transition: unset;
+  }
+
+  .navigation__link.active svg {
+    fill: var(--color-white);
+  }
+
+  .navigation__item:has(.active) {
+    background-color: var(--color-primary);
+    transition: all 0.3s ease-in-out;
+    border-radius: 0.5rem;
+  }
+
+  .navigation__item:has(.active) svg {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .page-heading,
+  .section-heading {
+    width: unset !important;
+  }
+
+  .h2-style {
+    font-size: 26px;
+  }
+
+  .align-items-center-res {
+    align-items: center;
+  }
+
+  .service-name {
+    font-size: 28px;
+    line-height: 120%;
+  }
+
+  .resume-career {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .icon svg {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (width <=767px) {
+  .medium-pages {
+    display: none;
+  }
+
+  .container {
+    height: calc-size(auto, size + 60px);
+  }
+
+  .main-content {
+    margin: 0 !important;
+  }
+
+  .intro-role {
+    height: 140px;
+    font-size: 56px;
+  }
+
+  .navigation__nav {
+    visibility: hidden;
+    opacity: 0;
+    margin-left: -100%;
+  }
+
+  .nav-small {
+    display: block !important;
+    left: 0;
+    padding: 0.5rem !important;
+    z-index: 1000;
+  }
+
+  .profile-img {
+    height: 400px;
+    width: 100vw;
+    margin-block: 30px;
+  }
+
+  .user-bg,
+  .user-img {
+    top: 50%;
+    translate: -50% -50%;
+    left: 50%;
+    width: 280px;
+    height: 350px;
+  }
+
+  .p-btn {
+    font-size: 12px;
+    padding: 15px !important;
+  }
+
+  .p-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .ms-60 {
+    margin-left: 0 !important;
+  }
+
+  .p-sm-1 {
+    padding: 10px !important;
+  }
+
+  .Statics-content {
+    width: fit-content;
+  }
+
+  .Statics-content .d-flex.align-items-center.gap-2.gap-xl-4 {
+    width: 100%;
+  }
+
+  .value {
+    font-size: 48px;
+  }
+
+  .pt-120 {
+    padding-top: 60px;
+  }
+
+  .pb-60 {
+    padding-bottom: 40px;
+  }
+
+  .page-heading,
+  .section-heading {
+    width: fit-content;
+  }
+
+  .page-heading p {
+    color: black;
+    opacity: 0.8;
+    font-size: 16px;
+  }
+
+  .page-heading h3 {
+    font-size: 26px;
+  }
+
+  .tabs {
+    margin: 0 !important;
+  }
+
+  .tabs .nav {
+    margin-top: 1.5rem;
+  }
+
+  .resume-name {
+    font-size: 42px;
+  }
+
+  .service-desc {
+    font-size: 16px !important;
+    line-height: 130%;
+    width: 265px !important;
+    text-align: left;
+  }
+
+  .ps-5.br-left-n3.info {
+    padding-left: 1.25rem !important;
+  }
+
+  .resume-structure {
+    padding: 1rem;
+  }
+
+  .resume-profile-container {
+    flex-direction: column;
+    gap: 1.25rem !important;
+  }
+
+  .job-desc,
+  .semi-title {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .semi-title {
+    font-weight: 700 !important;
+  }
+
+  .ps-4.ps-xxl-7.br-left-n3.mt-5.mt-md-0 {
+    border: unset;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .h2-style {
+    font-size: 26px;
+    line-height: 130%;
+  }
+
+  .resume-section .d-flex.align-items-center {
+    margin-block: 1.5rem !important;
+  }
+
+  .Social-media {
+    margin-top: 1rem;
+  }
+
+  body:has(.resume-section) .row>* {
+    height: fit-content;
+  }
+
+  .max {
+    max-width: 100%;
+  }
+
+  .Service-card {
+    width: 100% !important;
+    margin-left: 14px;
+  }
+
+  .Title-services {
+    font-size: 32px;
+  }
+
+  .service-name {
+    font-size: 28px;
+    line-height: 120%;
+  }
+
+  .icon svg {
+    width: 42px;
+  }
+
+  .line.my-5 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .responsive {
+    margin-inline: 13px
+  }
+
+  .br1-left {
+    height: auto;
+  }
+
+  .contact-form {
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .contact-form .gap-2 {
+    gap: unset !important;
+  }
+
+  .contact-form .ps-2 {
+    padding: unset !important;
+  }
+
+  .contact-form .contact-info {
+    gap: 0.5rem !important;
+    padding-left: 0.5rem !important;
+  }
+
+  .Statics-content {
+    margin-top: 0 !important;
+  }
+
+  .pt-xs {
+    padding-top: 0 !important;
+  }
+
+  .service-con {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (width <=340px) {
+
+  .user-bg,
+  .user-img {
+    width: 230px;
+    height: 270px;
+    top: 50%;
+    translate: -50% -50%;
+    left: 50%;
+  }
+
+  .intro-role {
+    font-size: 48px !important;
+    height: 120px !important;
+  }
+
+  .contact-info {
+    font-size: 10px;
+  }
+
+  .Service-card {
+    width: 100vw !important;
+  }
+
+  .p-btn {
+    font-size: 10px;
+  }
+
+  .nav-pills .nav-link {
+    font-size: 16px;
+  }
+
+  .info li a,
+  .info li {
+    font-size: 12px;
+  }
+
+  .resume-name {
+    font-size: 24px;
+  }
+
+  .resume-career {
+    font-size: 13px;
+  }
+
+  .ps-xs {
+    padding-left: 1rem !important;
+  }
+
+  .page-heading p {
+    color: #000;
+    opacity: .8;
+    font-size: 14px;
+  }
+}
