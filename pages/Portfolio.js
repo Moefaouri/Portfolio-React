@@ -256,7 +256,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-md-6   mt-3">
+                <div className="col-12 col-md-6   mt-3 mb-5">
                   <div
                     style={{
                       opacity: 1,
@@ -509,7 +509,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-md-6   mt-3">
+                <div className="col-12 col-md-6   mt-3 mb-5">
                   <div
                     style={{
                       opacity: 1,

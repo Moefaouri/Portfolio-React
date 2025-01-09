@@ -157,7 +157,7 @@ const Contact = () => {
               </p>
             </div>
             <div className="contact-form"
-              style={{ width: "80vw", height: "45vh", margin: 0, padding: 0 }}
+              style={{ width: "80vw", marginBottom: 60, padding: 0 }}
             >
               <form
                 className="mt-8 mt-4 mt-md-15 p-3 rounded-5 "

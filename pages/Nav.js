@@ -7,7 +7,9 @@ import Image from "next/image";
 const Nav = () => {
   const router = useRouter();
 
-
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
 
   const isActive = (path) => router.pathname === path;
   return (
