@@ -12,8 +12,9 @@ const Resume = () => {
           <header className="text-center page-heading">
             <h3 className="">Online Resume </h3>
             <Link
-              href="/ui"
+              href="/documents/Mohammmad - Resume.pdf"
               className="p-btn nav-btn  btn-primary px-4 py-4 rounded-pill d-flex align-items-center gap-2"
+              download
               passHref
             >
               <svg

@@ -3,6 +3,30 @@
     width: 650px;
   }
 
+  .navigation__nav {
+    overflow-y: auto;
+  }
+
+  .navigation__nav::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .navigation__nav::-webkit-scrollbar-track {
+    background: var(--color-white);
+    border-radius: 3px;
+  }
+
+  .navigation__nav::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 3px;
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    .navigation__nav {
+      scrollbar-color: var(--color-primary) var(--color-white);
+    }
+  }
+
   .intro-role {
     font-size: 60px;
     height: 75px;
@@ -11,6 +35,10 @@
   .navigation__nav {
     width: 20% !important;
     height: 100% !important;
+  }
+
+  .navigation__list {
+    margin-bottom: 0.5rem !important;
   }
 
   .container {
@@ -43,8 +71,28 @@
 
   }
 
-  .navigation__list {
-    margin-block: 1rem !important;
+  .navigation__nav {
+    overflow-y: auto;
+  }
+
+  .navigation__nav::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .navigation__nav::-webkit-scrollbar-track {
+    background: var(--color-white);
+    border-radius: 3px;
+  }
+
+  .navigation__nav::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 3px;
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    .navigation__nav {
+      scrollbar-color: var(--color-primary) var(--color-white);
+    }
   }
 
   .max {
