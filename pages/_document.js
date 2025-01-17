@@ -6,10 +6,10 @@ export default function Document() {
       <Head>
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Maryan's Portfolio" />
+        <meta property="og:title" content="Mohammad Elfauri Portfolio" />
         <meta property="og:description" content="Check out my personal portfolio showcasing my web development projects." />
-        <meta property="og:image" content="https://yourwebsite.com/your-image.jpg" /> {/* Replace with your actual image URL */}
-        <meta property="og:url" content="https://yourwebsite.com" /> {/* Replace with your actual website URL */}
+        <meta property="og:image" content="images/portfolio.png"/>
+        <meta property="og:url" content="https://moelfaouriportfolio.vercel.app/" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <body className="antialiased">
