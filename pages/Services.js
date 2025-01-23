@@ -54,7 +54,7 @@ const Services = () => {
               more about my skills and experiences.
             </p>
             <Link
-              href="/ui"
+              href="/contact"
               className="p-btn nav-btn  btn-primary px-4 py-4 rounded-pill d-flex align-items-center gap-2"
               passHref
             >

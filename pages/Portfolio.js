@@ -17,7 +17,7 @@ const Portfolio = () => {
               technologies. Let me show you my best creations.
             </p>
             <Link
-              href="/ui"
+              href="/contact"
               className="p-btn nav-btn  btn-primary px-4 py-4 rounded-pill d-flex align-items-center gap-2"
               passHref
             >
@@ -42,31 +42,17 @@ const Portfolio = () => {
             id="pills-tab"
             role="tablist"
           >
-            <li className="nav-item " role="presentation">
-              <button
-                className="nav-link active"
-                id="pills-all-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-all"
-                type="button"
-                role="tab"
-                aria-controls="pills-all"
-                aria-selected="true"
-              >
-                All
-              </button>
-            </li>
             <li className="nav-item" role="presentation">
               <button
-                className="nav-link "
+                className="nav-link active"
                 id="pills-frontend-tab"
                 data-bs-toggle="pill"
                 data-bs-target="#pills-frontend"
                 type="button"
                 role="tab"
                 aria-controls="pills-frontend"
-                aria-selected="false"
-              >
+                aria-selected="true"
+                >
                 Front-End
               </button>
             </li>
@@ -86,507 +72,9 @@ const Portfolio = () => {
             </li>
           </ul>
           <div className="tab-content" id="pills-tabContent">
+
             <div
               className="tab-pane fade show active"
-              id="pills-all"
-              role="tabpanel"
-              aria-labelledby="pills-all-tab"
-              tabindex="0"
-            >
-              <div className="row">
-                <div className="col-12 col-md-6   mt-3 mb-5">
-                  <div
-                    style={{
-                      opacity: 1,
-                      transform: "none",
-                      willChange: "auto",
-                    }}
-                  >
-                    <div className="project-card">
-                      <Link
-                        className="thumb d-block"
-                        href={"https://moefaouri.github.io/portfolio/"}
-                      >
-                        <div className="post-thumb">
-                          <div className="post-thumb-inner">
-                            <Image
-                              src="/images/coding.webp"
-                              className="p-2 w-100"
-                              width={620}
-                              height={357}
-                              alt="my image"
-                            />
-                          </div>
-                        </div>
-                        <div className="post-thumb">
-                          <div className="post-thumb-inner">
-                            <Image
-                              src="/images/coding.webp"
-                              className="p-2 w-100"
-                              width={620}
-                              height={357}
-                              alt="my image"
-                            />
-                          </div>
-                        </div>
-                      </Link>
-                      <div class="d-flex justify-content-between gap-2 align-items-center pt-4  px-3 ">
-                        <div>
-                          <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
-                            <a class=" chip  rounded-pill " href="#">
-                            Web Development
-                            </a>
-                            <a class=" chip  rounded-pill" href="#">
-                              HTML
-                            </a>
-                            <a class=" chip rounded-pill" href="#">
-                              CSS
-                            </a>
-                            <a class=" chip rounded-pill" href="#">
-                              JS
-                            </a>
-                          </div>
-                          <a
-                            class="project-title mt-4 d-block"
-                            href="https://moefaouri.github.io/portfolio/"
-                          >
-                           Resume / CV
-                          </a>
-                        </div>
-                        <a
-                          class="project-link d-flex align-items-center justify-content-center flex-shrink-0"
-                          href="https://moefaouri.github.io/portfolio/"
-                        >
-                          <i class="">
-                            <svg
-                              stroke="currentColor"
-                              fill="currentColor"
-                              stroke-width="0"
-                              viewBox="0 0 256 256"
-                              height="1em"
-                              width="1em"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path>
-                            </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-md-6   mt-3 mb-5">
-                  <div
-                    style={{
-                      opacity: 1,
-                      transform: "none",
-                      willChange: "auto",
-                    }}
-                  >
-                    <div className="project-card">
-                      <Link
-                        className="thumb d-block"
-                        href={"https://moefaouri.github.io/Education/"}
-                      >
-                        <div className="post-thumb">
-                          <div className="post-thumb-inner">
-                            <Image
-                              src="/images/coding.webp"
-                              className="p-2 w-100"
-                              width={620}
-                              height={357}
-                              alt="my image"
-                            />
-                          </div>
-                        </div>
-                        <div className="post-thumb">
-                          <div className="post-thumb-inner">
-                            <Image
-                              src="/images/coding.webp"
-                              className="p-2 w-100"
-                              width={620}
-                              height={357}
-                              alt="my image"
-                            />
-                          </div>
-                        </div>
-                      </Link>
-                      <div class="d-flex justify-content-between gap-2 align-items-center pt-4  px-3 ">
-                        <div>
-                        <div class="d-flex flex-wrap gap-1 align-items-center">
-                            <a class=" chip  rounded-pill " href="#">
-                            Web Development
-                            </a>
-                            <a class=" chip  rounded-pill" href="#">
-                              HTML
-                            </a>
-                            <a class=" chip rounded-pill" href="#">
-                              CSS
-                            </a>
-                            <a class=" chip rounded-pill" href="#">
-                              JS
-                            </a>
-                          </div>
-                          <a
-                            class="project-title mt-4 d-block"
-                            href="https://moefaouri.github.io/Education/"
-                          >
-                            Education Website
-                          </a>
-                        </div>
-                        <a
-                          class="project-link d-flex align-items-center justify-content-center flex-shrink-0"
-                          href="https://moefaouri.github.io/Education/"
-                        >
-                          <i class="">
-                            <svg
-                              stroke="currentColor"
-                              fill="currentColor"
-                              stroke-width="0"
-                              viewBox="0 0 256 256"
-                              height="1em"
-                              width="1em"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path>
-                            </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-md-6   mt-3 mb-5 mb-5">
-                  <div
-                    style={{
-                      opacity: 1,
-                      transform: "none",
-                      willChange: "auto",
-                    }}
-                  >
-                    <div className="project-card">
-                      <Link
-                        className="thumb d-block"
-                        href={"https://moefaouri.github.io/Form-with-stepper/"}
-                      >
-                        <div className="post-thumb">
-                          <div className="post-thumb-inner">
-                            <Image
-                              src="/images/coding.webp"
-                              className="p-2 w-100"
-                              width={620}
-                              height={357}
-                              alt="my image"
-                            />
-                          </div>
-                        </div>
-                        <div className="post-thumb">
-                          <div className="post-thumb-inner">
-                            <Image
-                              src="/images/coding.webp"
-                              className="p-2 w-100"
-                              width={620}
-                              height={357}
-                              alt="my image"
-                            />
-                          </div>
-                        </div>
-                      </Link>
-                      <div class="d-flex justify-content-between gap-2 align-items-center pt-4  px-3 ">
-                        <div>
-                        <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
-                            <a class=" chip  rounded-pill " href="#">
-                            Web Development
-                            </a>
-                            <a class=" chip  rounded-pill" href="#">
-                              HTML
-                            </a>
-                            <a class=" chip rounded-pill" href="#">
-                              CSS
-                            </a>
-                            <a class=" chip rounded-pill" href="#">
-                              JS
-                            </a>
-                          </div>
-                          <a
-                            class="project-title mt-4 d-block"
-                            href="https://moefaouri.github.io/Form-with-stepper/"
-                          >
-                            Form With Stepper
-                          </a>
-                        </div>
-                        <a
-                          class="project-link d-flex align-items-center justify-content-center flex-shrink-0"
-                          href="https://moefaouri.github.io/Form-with-stepper/"
-                        >
-                          <i class="">
-                            <svg
-                              stroke="currentColor"
-                              fill="currentColor"
-                              stroke-width="0"
-                              viewBox="0 0 256 256"
-                              height="1em"
-                              width="1em"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path>
-                            </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-md-6   mt-3 mb-5">
-                  <div
-                    style={{
-                      opacity: 1,
-                      transform: "none",
-                      willChange: "auto",
-                    }}
-                  >
-                    <div className="project-card">
-                      <Link
-                        className="thumb d-block"
-                        href={"https://xd.adobe.com/view/813f13d4-ebfe-40cd-a95b-e4d32cbf3676-d46c/"}
-                      >
-                        <div className="post-thumb">
-                          <div className="post-thumb-inner">
-                            <Image
-                              src="/images/designing.webp"
-                              className="p-2 w-100"
-                              width={620}
-                              height={357}
-                              alt="my image"
-                            />
-                          </div>
-                        </div>
-                        <div className="post-thumb">
-                          <div className="post-thumb-inner">
-                            <Image
-                              src="/images/designing.webp"
-                              className="p-2 w-100"
-                              width={620}
-                              height={357}
-                              alt="my image"
-                            />
-                          </div>
-                        </div>
-                      </Link>
-                      <div class="d-flex justify-content-between gap-2 align-items-center pt-4  px-3 ">
-                        <div>
-                          <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
-                          <a class=" chip rounded-pill" href="#">
-                              Design
-                            </a>
-                            <a class=" chip  rounded-pill " href="#">
-                            Prototype
-                            </a>
-                            <a class=" chip  rounded-pill" href="#">
-                              XD
-                            </a>
-                            <a class=" chip rounded-pill" href="#">
-                              Photoshop
-                            </a>
-                            <a class=" chip rounded-pill" href="#">
-                              MDL
-                            </a>
-                          </div>
-                          <a
-                            class="project-title mt-4 d-block"
-                            href="https://xd.adobe.com/view/813f13d4-ebfe-40cd-a95b-e4d32cbf3676-d46c/"
-                          >
-                           Taskery
-                          </a>
-                        </div>
-                        <a
-                          class="project-link d-flex align-items-center justify-content-center flex-shrink-0"
-                          href="https://xd.adobe.com/view/813f13d4-ebfe-40cd-a95b-e4d32cbf3676-d46c/"
-                        >
-                          <i class="">
-                            <svg
-                              stroke="currentColor"
-                              fill="currentColor"
-                              stroke-width="0"
-                              viewBox="0 0 256 256"
-                              height="1em"
-                              width="1em"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path>
-                            </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-md-6   mt-3 mb-5">
-                  <div
-                    style={{
-                      opacity: 1,
-                      transform: "none",
-                      willChange: "auto",
-                    }}
-                  >
-                    <div className="project-card">
-                      <Link
-                        className="thumb d-block"
-                        href={"https://xd.adobe.com/view/5427591a-d9f2-42e2-a955-6bb47b48458d-0174/"}
-                      >
-                        <div className="post-thumb">
-                          <div className="post-thumb-inner">
-                            <Image
-                              src="/images/designing.webp"
-                              className="p-2 w-100"
-                              width={620}
-                              height={357}
-                              alt="my image"
-                            />
-                          </div>
-                        </div>
-                        <div className="post-thumb">
-                          <div className="post-thumb-inner">
-                            <Image
-                              src="/images/designing.webp"
-                              className="p-2 w-100"
-                              width={620}
-                              height={357}
-                              alt="my image"
-                            />
-                          </div>
-                        </div>
-                      </Link>
-                      <div class="d-flex justify-content-between gap-2 align-items-center pt-4  px-3 ">
-                        <div>
-                        <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
-                            <a class=" chip rounded-pill" href="#">
-                              Design
-                            </a>
-                            <a class=" chip  rounded-pill" href="#">
-                              XD
-                            </a>
-                            <a class=" chip rounded-pill" href="#">
-                              Photoshop
-                            </a>
-                            <a class=" chip rounded-pill" href="#">
-                              MDL
-                            </a>
-                          </div>
-                          <a
-                            class="project-title mt-4 d-block"
-                            href="https://xd.adobe.com/view/5427591a-d9f2-42e2-a955-6bb47b48458d-0174/"
-                          >
-                            Accident Documentation
-                          </a>
-                        </div>
-                        <a
-                          class="project-link d-flex align-items-center justify-content-center flex-shrink-0"
-                          href="https://xd.adobe.com/view/5427591a-d9f2-42e2-a955-6bb47b48458d-0174/"
-                        >
-                          <i class="">
-                            <svg
-                              stroke="currentColor"
-                              fill="currentColor"
-                              stroke-width="0"
-                              viewBox="0 0 256 256"
-                              height="1em"
-                              width="1em"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path>
-                            </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-md-6   mt-3 mb-5 mb-5">
-                  <div
-                    style={{
-                      opacity: 1,
-                      transform: "none",
-                      willChange: "auto",
-                    }}
-                  >
-                    <div className="project-card">
-                      <Link
-                        className="thumb d-block"
-                        href={"https://xd.adobe.com/view/75cb6e6d-5afd-4fe2-b06d-54a129994965-2098/"}
-                        download={true}
-                      >
-                        <div className="post-thumb">
-                          <div className="post-thumb-inner">
-                            <Image
-                              src="/images/designing.webp"
-                              className="p-2 w-100"
-                              width={620}
-                              height={357}
-                              alt="my image"
-                            />
-                          </div>
-                        </div>
-                        <div className="post-thumb">
-                          <div className="post-thumb-inner">
-                            <Image
-                              src="/images/designing.webp"
-                              className="p-2 w-100"
-                              width={620}
-                              height={357}
-                              alt="my image"
-                            />
-                          </div>
-                        </div>
-                      </Link>
-                      <div class="d-flex justify-content-between gap-2 align-items-center pt-4  px-3 ">
-                        <div>
-                        <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
-                            <a class=" chip  rounded-pill " href="#">
-                            Wireframing
-                            </a>
-                            <a class=" chip  rounded-pill" href="#">
-                              XD
-                            </a>
-                            <a class=" chip rounded-pill" href="#">
-                            Photoshop
-                            </a>
-                          </div>
-                          <a
-                            class="project-title mt-4 d-block"
-                            href="https://xd.adobe.com/view/75cb6e6d-5afd-4fe2-b06d-54a129994965-2098/"
-                            download
-                          >
-                            Patients Requests
-                          </a>
-                        </div>
-                        <a
-                          class="project-link d-flex align-items-center justify-content-center flex-shrink-0"
-                          href="https://xd.adobe.com/view/75cb6e6d-5afd-4fe2-b06d-54a129994965-2098/"
-                          download
-                        >
-                          <i class="">
-                            <svg
-                              stroke="currentColor"
-                              fill="currentColor"
-                              stroke-width="0"
-                              viewBox="0 0 256 256"
-                              height="1em"
-                              width="1em"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path>
-                            </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="tab-pane fade"
               id="pills-frontend"
               role="tabpanel"
               aria-labelledby="pills-frontend-tab"
@@ -609,7 +97,7 @@ const Portfolio = () => {
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
                             <Image
-                              src="/images/coding.webp"
+                              src="/images/fe.jpg"
                               className="p-2 w-100"
                               width={620}
                               height={357}
@@ -620,7 +108,7 @@ const Portfolio = () => {
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
                             <Image
-                              src="/images/coding.webp"
+                              src="/images/fe.jpg"
                               className="p-2 w-100"
                               width={620}
                               height={357}
@@ -690,7 +178,7 @@ const Portfolio = () => {
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
                             <Image
-                              src="/images/coding.webp"
+                              src="/images/fe.jpg"
                               className="p-2 w-100"
                               width={620}
                               height={357}
@@ -701,7 +189,7 @@ const Portfolio = () => {
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
                             <Image
-                              src="/images/coding.webp"
+                              src="/images/fe.jpg"
                               className="p-2 w-100"
                               width={620}
                               height={357}
@@ -771,7 +259,7 @@ const Portfolio = () => {
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
                             <Image
-                              src="/images/coding.webp"
+                              src="/images/fe.jpg"
                               className="p-2 w-100"
                               width={620}
                               height={357}
@@ -782,7 +270,7 @@ const Portfolio = () => {
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
                             <Image
-                              src="/images/coding.webp"
+                              src="/images/fe.jpg"
                               className="p-2 w-100"
                               width={620}
                               height={357}
@@ -862,7 +350,7 @@ const Portfolio = () => {
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
                             <Image
-                              src="/images/designing.webp"
+                              src="/images/userinterface.jpg"
                               className="p-2 w-100"
                               width={620}
                               height={357}
@@ -873,7 +361,7 @@ const Portfolio = () => {
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
                             <Image
-                              src="/images/designing.webp"
+                              src="/images/userinterface.jpg"
                               className="p-2 w-100"
                               width={620}
                               height={357}
@@ -946,7 +434,7 @@ const Portfolio = () => {
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
                             <Image
-                              src="/images/designing.webp"
+                              src="/images/userinterface.jpg"
                               className="p-2 w-100"
                               width={620}
                               height={357}
@@ -957,7 +445,7 @@ const Portfolio = () => {
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
                             <Image
-                              src="/images/designing.webp"
+                              src="/images/userinterface.jpg"
                               className="p-2 w-100"
                               width={620}
                               height={357}
@@ -1028,7 +516,7 @@ const Portfolio = () => {
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
                             <Image
-                              src="/images/designing.webp"
+                              src="/images/userinterface.jpg"
                               className="p-2 w-100"
                               width={620}
                               height={357}
@@ -1039,7 +527,7 @@ const Portfolio = () => {
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
                             <Image
-                              src="/images/designing.webp"
+                              src="/images/userinterface.jpg"
                               className="p-2 w-100"
                               width={620}
                               height={357}

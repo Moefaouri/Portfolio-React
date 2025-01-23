@@ -23,9 +23,29 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
-    // Add your form submission logic here (e.g., send to an API or email)
+  
+    // Example mailto link implementation (similar to formatMailBody function)
+    const { name, email, phone, location, message } = formData;
+    const mail = "mailto:mohammadalfaure190@icloud.com";
+    const subject = "Contact Form Submission";
+    const body = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0ALocation: ${location}%0AMessage: ${message}`;
+    const mailtoLink = `${mail}?subject=${encodeURIComponent(subject)}&body=${body}`;
+    window.location.href = mailtoLink;
+  
+    // Reset form fields
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      location: "",
+      message: "",
+      saveDetails: false,
+    });
+  
+    // Show success alert
+    alert("Your email app will be opened to send the message. Please check it!");
   };
-
+  
   return (
     <div>
       <Nav />
