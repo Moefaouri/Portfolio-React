@@ -47,7 +47,7 @@ const Contact = () => {
   };
   
   return (
-    <div>
+    <div className="">
       <Nav />
       <div className="main-content pt-120 pb-60 mt-10 ">
         <div className="pb-60 br-bottom-n3 responsive">

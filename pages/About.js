@@ -139,7 +139,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="pt-120 br-bottom-n3 pb-60 pt-xs">
+        <div className="pt-120 responsiv-pt br-bottom-n3 pb-60 pt-xs">
           <div className="Statics ms-60 ">
             <div className="Statics-content d-flex flex-wrap flex-xl-nowrap align-items-center gap-3 mt-10  ">
               {statics.map((stat) => (

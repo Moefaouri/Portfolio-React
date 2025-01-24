@@ -1,4 +1,4 @@
-@media (1400px <=width <=1850px) {
+@media (1650px <=width <=1850px) {
   .introduction {
     width: 650px;
   }
@@ -63,6 +63,35 @@
     width: 40px;
   }
 
+}
+@media (1400px <=width <=1650px) {
+.responsiv-pt{
+  padding-top: 2.5rem !important;
+}
+.profile-img{
+  height: 400px;
+  width: 100vw;
+  margin-block: 30px;
+  margin-top: 50px;
+}
+.user-bg,
+.user-img {
+  top: 50%;
+  translate: -50% -50%;
+  left: 50%;
+  width: 280px;
+  height: 350px;
+}
+.navigation__nav {
+  width: 23% !important;
+}
+.navigation__list{
+  margin-bottom: 1rem !important;
+}
+.main-content {
+  margin-left: 23%;
+  padding-left: 50px;
+}
 }
 
 @media (1200px <=width <=1399px) {
