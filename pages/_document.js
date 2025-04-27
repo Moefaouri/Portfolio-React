@@ -11,7 +11,9 @@ export default function Document() {
         <meta property="og:description" content="Check out my personal portfolio showcasing my web development projects." />
         <meta property="og:image" content="https://moelfaouriportfolio.vercel.app/images/portfolio.png" />
         <meta property="og:url" content="https://moelfaouriportfolio.vercel.app/" />
-        <meta name="twitter:card" content="summary_large_image" />
+        <title>Mohammad Elfauri Portfolio</title>
+        <meta name="description" content="Check out my personal portfolio showcasing my web development projects." />
+        <link rel="icon" href="/images/favicon.png" type="image/png"/>
       </Head>
       <body className="antialiased">
         <Main />

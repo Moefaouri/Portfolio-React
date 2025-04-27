@@ -52,7 +52,7 @@ const Portfolio = () => {
                 role="tab"
                 aria-controls="pills-frontend"
                 aria-selected="true"
-                >
+              >
                 Front-End
               </button>
             </li>
@@ -81,7 +81,7 @@ const Portfolio = () => {
               tabindex="0"
             >
               <div className="row">
-                <div className="col-12 col-md-6   mt-3 mb-5">
+                <div className="col-12 col-md-6   mt-3 mb-5 mb-5">
                   <div
                     style={{
                       opacity: 1,
@@ -92,7 +92,8 @@ const Portfolio = () => {
                     <div className="project-card">
                       <Link
                         className="thumb d-block"
-                        href={"https://moefaouri.github.io/portfolio/"}
+                        href={"https://petra-bloom.vercel.app/"}
+                        target="_blank"
                       >
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
@@ -121,7 +122,94 @@ const Portfolio = () => {
                         <div>
                           <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
                             <a class=" chip  rounded-pill " href="#">
-                            Web Development
+                              Web Development
+                            </a>
+                            <a class=" chip  rounded-pill" href="#">
+                              React.JS
+                            </a>
+                            <a class=" chip  rounded-pill" href="#">
+                              Next.JS
+                            </a>
+                            <a class=" chip rounded-pill" href="#">
+                              CSS
+                            </a>
+                            <a class=" chip rounded-pill" href="#">
+                              TypeScript
+                            </a>
+                          </div>
+                          <a
+                            class="project-title mt-4 d-block"
+                            href="https://petra-bloom.vercel.app/"
+                            target="_blank"
+                          >
+                            Beedouin
+                          </a>
+                        </div>
+                        <a
+                          class="project-link d-flex align-items-center justify-content-center flex-shrink-0"
+                          href="https://petra-bloom.vercel.app/"
+                          target="_blank"
+                        >
+                          <i class="">
+                            <svg
+                              stroke="currentColor"
+                              fill="currentColor"
+                              stroke-width="0"
+                              viewBox="0 0 256 256"
+                              height="1em"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path>
+                            </svg>
+                          </i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-12 col-md-6   mt-3 mb-5">
+                  <div
+                    style={{
+                      opacity: 1,
+                      transform: "none",
+                      willChange: "auto",
+                    }}
+                  >
+                    <div className="project-card">
+                      <Link
+                        className="thumb d-block"
+                        href={"https://moefaouri.github.io/portfolio/"}
+                        target="_blank"
+                      >
+                        <div className="post-thumb">
+                          <div className="post-thumb-inner">
+                            <Image
+                              src="/images/fe.jpg"
+                              className="p-2 w-100"
+                              width={620}
+                              height={357}
+                              alt="my image"
+                            />
+                          </div>
+                        </div>
+                        <div className="post-thumb">
+                          <div className="post-thumb-inner">
+                            <Image
+                              src="/images/fe.jpg"
+                              className="p-2 w-100"
+                              width={620}
+                              height={357}
+                              alt="my image"
+                            />
+                          </div>
+                        </div>
+                      </Link>
+                      <div class="d-flex justify-content-between gap-2 align-items-center pt-4  px-3 ">
+                        <div>
+                          <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
+                            <a class=" chip  rounded-pill " href="#">
+                              Web Development
                             </a>
                             <a class=" chip  rounded-pill" href="#">
                               HTML
@@ -136,13 +224,15 @@ const Portfolio = () => {
                           <a
                             class="project-title mt-4 d-block"
                             href="https://moefaouri.github.io/portfolio/"
+                            target="_blank"
                           >
-                           Resume / CV
+                            Resume / CV
                           </a>
                         </div>
                         <a
                           class="project-link d-flex align-items-center justify-content-center flex-shrink-0"
                           href="https://moefaouri.github.io/portfolio/"
+                          target="_blank"
                         >
                           <i class="">
                             <svg
@@ -174,6 +264,7 @@ const Portfolio = () => {
                       <Link
                         className="thumb d-block"
                         href={"https://moefaouri.github.io/Education/"}
+                        target="_blank"
                       >
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
@@ -200,9 +291,9 @@ const Portfolio = () => {
                       </Link>
                       <div class="d-flex justify-content-between gap-2 align-items-center pt-4  px-3 ">
                         <div>
-                        <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
+                          <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
                             <a class=" chip  rounded-pill " href="#">
-                            Web Development
+                              Web Development
                             </a>
                             <a class=" chip  rounded-pill" href="#">
                               HTML
@@ -217,6 +308,7 @@ const Portfolio = () => {
                           <a
                             class="project-title mt-4 d-block"
                             href="https://moefaouri.github.io/Education/"
+                            target="_blank"
                           >
                             Education Website
                           </a>
@@ -224,6 +316,7 @@ const Portfolio = () => {
                         <a
                           class="project-link d-flex align-items-center justify-content-center flex-shrink-0"
                           href="https://moefaouri.github.io/Education/"
+                          target="_blank"
                         >
                           <i class="">
                             <svg
@@ -255,6 +348,7 @@ const Portfolio = () => {
                       <Link
                         className="thumb d-block"
                         href={"https://moefaouri.github.io/Form-with-stepper/"}
+                        target="_blank"
                       >
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
@@ -281,9 +375,9 @@ const Portfolio = () => {
                       </Link>
                       <div class="d-flex justify-content-between gap-2 align-items-center pt-4  px-3 ">
                         <div>
-                        <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
+                          <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
                             <a class=" chip  rounded-pill " href="#">
-                            Web Development
+                              Web Development
                             </a>
                             <a class=" chip  rounded-pill" href="#">
                               HTML
@@ -298,6 +392,7 @@ const Portfolio = () => {
                           <a
                             class="project-title mt-4 d-block"
                             href="https://moefaouri.github.io/Form-with-stepper/"
+                            target="_blank"
                           >
                             Form With Stepper
                           </a>
@@ -305,6 +400,7 @@ const Portfolio = () => {
                         <a
                           class="project-link d-flex align-items-center justify-content-center flex-shrink-0"
                           href="https://moefaouri.github.io/Form-with-stepper/"
+                          target="_blank"
                         >
                           <i class="">
                             <svg
@@ -325,7 +421,7 @@ const Portfolio = () => {
                   </div>
                 </div>
               </div>
-              </div>
+            </div>
             <div
               className="tab-pane fade"
               id="pills-ui"
@@ -346,6 +442,7 @@ const Portfolio = () => {
                       <Link
                         className="thumb d-block"
                         href={"https://xd.adobe.com/view/813f13d4-ebfe-40cd-a95b-e4d32cbf3676-d46c/"}
+                        target="_blank"
                       >
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
@@ -373,11 +470,11 @@ const Portfolio = () => {
                       <div class="d-flex justify-content-between gap-2 align-items-center pt-4  px-3 ">
                         <div>
                           <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
-                          <a class=" chip rounded-pill" href="#">
+                            <a class=" chip rounded-pill" href="#">
                               Design
                             </a>
                             <a class=" chip  rounded-pill " href="#">
-                            Prototype
+                              Prototype
                             </a>
                             <a class=" chip  rounded-pill" href="#">
                               XD
@@ -392,13 +489,15 @@ const Portfolio = () => {
                           <a
                             class="project-title mt-4 d-block"
                             href="https://xd.adobe.com/view/813f13d4-ebfe-40cd-a95b-e4d32cbf3676-d46c/"
+                            target="_blank"
                           >
-                           Taskery
+                            Taskery
                           </a>
                         </div>
                         <a
                           class="project-link d-flex align-items-center justify-content-center flex-shrink-0"
                           href="https://xd.adobe.com/view/813f13d4-ebfe-40cd-a95b-e4d32cbf3676-d46c/"
+                          target="_blank"
                         >
                           <i class="">
                             <svg
@@ -430,6 +529,7 @@ const Portfolio = () => {
                       <Link
                         className="thumb d-block"
                         href={"https://xd.adobe.com/view/5427591a-d9f2-42e2-a955-6bb47b48458d-0174/"}
+                        target="_blank"
                       >
                         <div className="post-thumb">
                           <div className="post-thumb-inner">
@@ -456,7 +556,7 @@ const Portfolio = () => {
                       </Link>
                       <div class="d-flex justify-content-between gap-2 align-items-center pt-4  px-3 ">
                         <div>
-                        <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
+                          <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
                             <a class=" chip rounded-pill" href="#">
                               Design
                             </a>
@@ -473,6 +573,7 @@ const Portfolio = () => {
                           <a
                             class="project-title mt-4 d-block"
                             href="https://xd.adobe.com/view/5427591a-d9f2-42e2-a955-6bb47b48458d-0174/"
+                            target="_blank"
                           >
                             Accident Documentation
                           </a>
@@ -480,6 +581,7 @@ const Portfolio = () => {
                         <a
                           class="project-link d-flex align-items-center justify-content-center flex-shrink-0"
                           href="https://xd.adobe.com/view/5427591a-d9f2-42e2-a955-6bb47b48458d-0174/"
+                          target="_blank"
                         >
                           <i class="">
                             <svg
@@ -511,6 +613,7 @@ const Portfolio = () => {
                       <Link
                         className="thumb d-block"
                         href={"https://xd.adobe.com/view/75cb6e6d-5afd-4fe2-b06d-54a129994965-2098/"}
+                        target="_blank"
                         download={true}
                       >
                         <div className="post-thumb">
@@ -538,20 +641,21 @@ const Portfolio = () => {
                       </Link>
                       <div class="d-flex justify-content-between gap-2 align-items-center pt-4  px-3 ">
                         <div>
-                        <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
+                          <div class="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
                             <a class=" chip  rounded-pill " href="#">
-                            Wireframing
+                              Wireframing
                             </a>
                             <a class=" chip  rounded-pill" href="#">
                               XD
                             </a>
                             <a class=" chip rounded-pill" href="#">
-                            Photoshop
+                              Photoshop
                             </a>
                           </div>
                           <a
                             class="project-title mt-4 d-block"
                             href="https://xd.adobe.com/view/75cb6e6d-5afd-4fe2-b06d-54a129994965-2098/"
+                            target="_blank"
                             download
                           >
                             Patients Requests
@@ -561,6 +665,7 @@ const Portfolio = () => {
                           class="project-link d-flex align-items-center justify-content-center flex-shrink-0"
                           href="https://xd.adobe.com/view/75cb6e6d-5afd-4fe2-b06d-54a129994965-2098/"
                           download
+                          target="_blank"
                         >
                           <i class="">
                             <svg
