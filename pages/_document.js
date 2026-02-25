@@ -16,6 +16,21 @@ export default function Document() {
         <link rel="icon" href="/images/favicon.png" type="image/png"/>
       </Head>
       <body className="antialiased">
+        {/* Prevent dark mode flash on page load */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('theme');
+                  if (theme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                  }
+                } catch(e) {}
+              })();
+            `,
+          }}
+        />
         <Main />
         <NextScript />
       </body>

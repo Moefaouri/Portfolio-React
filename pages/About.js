@@ -3,159 +3,155 @@ import Image from "next/image";
 import Nav from "./Nav";
 import React, { useState, useEffect } from "react";
 
+const ROLES = ["Frontend Developer", "UI/UX Designer"];
+const TYPING_SPEED   = 90;
+const DELETING_SPEED = 45;
+const PAUSE_TIME     = 2200;
+
+const STATS = [
+  { label: "Years of Experience", target: 3 },
+  { label: "Personal Projects",   target: 6 },
+  { label: "Company Projects",    target: 14 },
+];
+
+const TECH = [
+  "React.js", "Next.js", "JavaScript", "TypeScript",
+  "HTML5", "CSS3", "Bootstrap", "Material Design",
+  "React Native", "REST APIs", "Git & GitHub",
+  "Adobe XD", "Photoshop", "Illustrator", "UI/UX Design",
+];
+
 const About = () => {
-  const [text, setText] = useState("");
+  const [text,       setText]       = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const [loopIndex, setLoopIndex] = useState(0);
-  const roles = ["Front-End Developer", "UI/UX Designer"];
-  const typingSpeed = 100;
-  const deletingSpeed = 50;
-  const pauseTime = 2000;
+  const [loopIndex,  setLoopIndex]  = useState(0);
+  const [statValues, setStatValues] = useState(STATS.map(() => 0));
 
-  const [statics, setStatics] = useState([
-    { id: 1, label: "Years of Experience", value: 0, target: 1},
-    { id: 2, label: "Personal Projects", value: 0, target: 6 },
-    { id: 3, label: "Company Projects", value: 0, target: 14 },
-  ]);
-
-  const totalDuration = 2000;
-
+  /* Typing effect */
   useEffect(() => {
-    const handleTyping = () => {
-      const currentRole = roles[loopIndex % roles.length];
+    const currentRole = ROLES[loopIndex % ROLES.length];
+    const timeout = setTimeout(() => {
       if (!isDeleting) {
-        setText((prev) => currentRole.substring(0, prev.length + 1));
-        if (text === currentRole) {
-          setTimeout(() => setIsDeleting(true), pauseTime);
-        }
+        setText(currentRole.substring(0, text.length + 1));
+        if (text === currentRole) setTimeout(() => setIsDeleting(true), PAUSE_TIME);
       } else {
-        setText((prev) => currentRole.substring(0, prev.length - 1));
-        if (text === "") {
-          setIsDeleting(false);
-          setLoopIndex((prev) => prev + 1);
-        }
+        setText(currentRole.substring(0, text.length - 1));
+        if (text === "") { setIsDeleting(false); setLoopIndex(i => i + 1); }
       }
-    };
-
-    const typingTimeout = setTimeout(
-      handleTyping,
-      isDeleting ? deletingSpeed : typingSpeed
-    );
-    return () => clearTimeout(typingTimeout); 
+    }, isDeleting ? DELETING_SPEED : TYPING_SPEED);
+    return () => clearTimeout(timeout);
   }, [text, isDeleting, loopIndex]);
 
+  /* Counter animation */
   useEffect(() => {
-    const maxTarget = Math.max(...statics.map((stat) => stat.target));
-    const increments = statics.map((stat) => ({
-      id: stat.id,
-      increment: stat.target / (totalDuration / 50),
-    }));
-
-    const incrementStatics = () => {
-      setStatics((prevStatics) =>
-        prevStatics.map((stat) => {
-          const increment = increments.find((inc) => inc.id === stat.id).increment;
-          if (stat.value < stat.target) {
-            return {
-              ...stat,
-              value: Math.min(stat.value + increment, stat.target),
-            };
-          }
-          return stat;
-        })
-      );
-    };
-
-    const interval = setInterval(incrementStatics, 50);
-
-    return () => clearInterval(interval);
-  }, [[roles, statics]]);
+    const steps = 50;
+    let step = 0;
+    const timer = setInterval(() => {
+      step++;
+      setStatValues(STATS.map(s => Math.min(Math.round((s.target / steps) * step), s.target)));
+      if (step >= steps) clearInterval(timer);
+    }, 40);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
-    <div className="container">
+    <div className="page-shell">
       <Nav />
-      <div className="main-content pt-120 pb-60 mt-10 ">
-        <div className="d-flex flex-wrap gap-9 gap-md-12 align-items-center justify-content-between">
-          <div className="introduction align-items-center ms-60">
-            <h3>HI, I&apos;M A FREELANCER</h3>
-            <h1 className="intro-role">{text}</h1>
-            <p className="p-controller intro-desc">
-              I&apos;m a software engineer specializing in scalable web apps.Explore
-              <Link href="/Portfolio" className="intro-link" passHref>
-                project portfolio
-              </Link>
-              and
-              <Link href="/Resume" className="intro-link" passHref>
-                online resume.
-              </Link>
-            </p>
-            <div className="d-flex flex-wrap align-items-center gap-3 gap-md-6 mt-5 mt-md-8">
-              <Link
-                href="/Portfolio"
-                className="p-btn btn-primary px-4 py-4 rounded-pill d-flex align-items-center gap-2"
-                passHref
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 256 256"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
-                </svg>
-                View Portfolio
-              </Link>
-              <Link
-                href="/Resume"
-                className="p-btn btn-secondary px-4 py-4 rounded-pill d-flex align-items-center gap-2"
-                passHref
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 384 512"
-                  height="18px"
-                  width="18px"
-                  fill="#ffffff"
-                >
-                  <path d="M336 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM144 32h96c8.8 0 16 7.2 16 16s-7.2 16-16 16h-96c-8.8 0-16-7.2-16-16s7.2-16 16-16zm48 128c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H102.4C90 416 80 407.4 80 396.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z" />
-                </svg>{" "}
-                View Resume
-              </Link>
+      <main className="main-pane">
+
+        {/*
+          Desktop layout:
+            [  text intro  |  portrait  ]
+            [ ── chips spanning full row ── ]
+            [ ──────── stats ──────────── ]
+
+          Mobile layout (flex-direction: column):
+            text intro   ← order: 1
+            portrait     ← order: 2
+            chips        ← order: 3
+            stats        ← order: 4
+        */}
+
+        <div className="about-wrapper">
+
+          {/* Row 1: text LEFT + portrait RIGHT */}
+          <section className="about-hero">
+
+            {/* Text — mobile order 1 */}
+            <div className="about-intro">
+              <h1 className="about-name">Mohammad<br />Elfauri</h1>
+              <div className="about-role-typed">
+                {text}<span className="cursor" />
+              </div>
+              <p className="about-desc">
+                Frontend Developer based in <strong>Amman, Jordan</strong> with 3+ years building
+                production web &amp; mobile apps. Currently shipping <strong>Hakeem</strong> — Jordan&apos;s
+                national healthcare platform — across 8+ internal systems. I own UI/UX end-to-end,
+                from wireframe to final handoff.
+              </p>
+              <div className="about-cta-wrap">
+                <Link href="/Portfolio" className="btn-primary-custom">
+                  <svg stroke="currentColor" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/>
+                  </svg>
+                  View Portfolio
+                </Link>
+                <Link href="/Resume" className="btn-secondary-custom">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path d="M336 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM144 32h96c8.8 0 16 7.2 16 16s-7.2 16-16 16h-96c-8.8 0-16-7.2-16-16s7.2-16 16-16zm48 128c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H102.4C90 416 80 407.4 80 396.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z"/>
+                  </svg>
+                  View Resume
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="position-relative profile-img ">
-            <div className="user-bg"></div>
-            <div className="bg-white">
-              <Image
-                src="/images/color-white.png"
-                className="user-img"
-                width={200}
-                height={200}
-                alt="my image"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="pt-120 responsiv-pt br-bottom-n3 pb-60 pt-xs">
-          <div className="Statics ms-60 ">
-            <div className="Statics-content d-flex flex-wrap flex-xl-nowrap align-items-center gap-3 mt-10  ">
-              {statics.map((stat) => (
-                <div key={stat.id} className="d-flex align-items-center gap-2 gap-xl-4">
-                  <h2 className="value">
-                    <span>{Math.floor(stat.value)}</span>
-                    {stat.label === "Clients Worldwide" && "k"}
-                  </h2>
-                  <div className="separator"></div>
-                  <span className="value-title">{stat.label}</span>
+
+            {/* Portrait — mobile order 2 */}
+            <div className="about-portrait-wrap">
+              <div className="about-portrait-card">
+                <div className="portrait-accent-ring" />
+                <div className="portrait-accent-dots" />
+                <div className="portrait-frame">
+                  <Image
+                    src="/images/color-white.png"
+                    width={220}
+                    height={280}
+                    alt="Mohammad Elfauri"
+                    priority
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      objectPosition: "center top",
+                    }}
+                  />
+                  <div className="portrait-gradient" />
                 </div>
-              ))}
+              </div>
+            </div>
+
+          </section>
+
+          {/* Row 2: chips full-width — mobile order 3 */}
+          <div className="about-chips-row">
+            <div className="tag-cloud">
+              {TECH.map(t => <span className="skill-tag" key={t}>{t}</span>)}
             </div>
           </div>
+
         </div>
-      </div>
+
+        {/* Row 3: stats — mobile order 4 */}
+        <section className="stats-row">
+          {STATS.map((stat, i) => (
+            <div className="stat-item" key={i}>
+              <div className="stat-number">{statValues[i]}</div>
+              <div className="stat-sep" />
+              <div className="stat-label">{stat.label}</div>
+            </div>
+          ))}
+        </section>
+
+      </main>
     </div>
   );
 };

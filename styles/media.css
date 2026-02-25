@@ -592,3 +592,78 @@
     font-size: 14px;
   }
 }
+/* ============================================================
+   MOHAMMAD ELFAURI PORTFOLIO — RESPONSIVE STYLES
+   All breakpoints consolidated here
+   ============================================================ */
+
+/* ── Large Desktop (1400px+): 3-col projects ── */
+@media (min-width: 1400px) {
+  .projects-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ── Laptop / Medium Desktop (993px – 1399px): 2-col projects ── */
+@media (max-width: 1399px) and (min-width: 993px) {
+  .projects-grid { grid-template-columns: repeat(2, 1fr); gap: 1.1rem; }
+}
+
+@media (max-width: 1200px) {
+  .main-pane { padding: 2.5rem 2rem 4rem 2.5rem; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .resume-wrapper { grid-template-columns: 200px 1fr; }
+}
+
+@media (max-width: 992px) {
+  :root { --nav-width: 220px; }
+  .main-pane { padding: 2rem 1.5rem 5rem; }
+  .about-hero { gap: 2rem; }
+  .about-avatar-bg { width: 155px; height: 155px; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .resume-wrapper { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── Tablet & Mobile: sidebar hidden, bottom nav shown ── */
+@media (max-width: 768px) {
+  .sidebar { display: none; }
+  .mobile-nav { display: block; }
+  .main-pane { margin-left: 0; padding: 1.5rem 1.25rem 6rem; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .about-hero { flex-direction: column-reverse; align-items: center; text-align: center; }
+  .about-cta-wrap { justify-content: center; }
+  .about-avatar-bg { width: 130px; height: 130px; }
+  .stats-row { gap: 1.5rem; justify-content: center; }
+  .stat-number { font-size: 1.75rem; }
+  .page-header h3 { font-size: 1.5rem; }
+  .resume-top-bar { flex-direction: column; align-items: flex-start; }
+  .portfolio-tabs-wrap { justify-content: center; }
+  .theme-toggle { margin: 0 auto; }
+}
+
+@media (max-width: 480px) {
+  .main-pane { padding: 1.25rem 1rem 6rem; }
+  .about-name { font-size: 1.9rem; }
+  .about-role-typed { font-size: 1.1rem; }
+  .btn-primary-custom,
+  .btn-secondary-custom { padding: 10px 18px; font-size: 0.82rem; }
+  .stat-number { font-size: 1.5rem; }
+  .resume-contact-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+}
+@media (max-width: 992px) {
+  .svc-step {
+    grid-template-columns: 60px 1fr;
+    gap: 0 1.25rem;
+  }
+
+  .svc-node-ring {
+    width: 58px;
+    height: 58px;
+  }
+
+  .svc-node-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
