@@ -611,20 +611,30 @@ input, textarea, select { font-family: var(--font-body); }
 }
 .project-card:hover {
   border-color: var(--accent-border);
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   box-shadow: var(--shadow-md), 0 0 0 1px var(--accent-border);
 }
 
-.project-thumb { overflow: hidden; aspect-ratio: 16/9; background: var(--bg3); }
-.project-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.45s ease; }
-.project-card:hover .project-thumb img { transform: scale(1.04); }
+.project-thumb {
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  background: #0b0f1a;
+  display: flex;
+  align-items: stretch;
+}
+.project-thumb > * { width: 100%; display: block; }
+.project-thumb img { height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.project-thumb a { display: flex; width: 100%; }
+.project-thumb a > svg { flex: 1; }
+.project-card:hover .project-thumb img,
+.project-card:hover .project-thumb svg { transform: scale(1.03); transition: transform 0.4s ease; }
 
-.project-body { padding: 0.85rem 1rem 1rem; }
-.project-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 0.75rem; }
+.project-body { padding: 0.65rem 0.85rem 0.85rem; }
+.project-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 0.55rem; }
 .chip {
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   font-weight: 600;
-  padding: 3px 10px;
+  padding: 2px 8px;
   border-radius: var(--radius-pill);
   background: var(--accent-soft);
   color: var(--accent);
@@ -632,11 +642,20 @@ input, textarea, select { font-family: var(--font-body); }
   letter-spacing: 0.03em;
   line-height: 1.6;
 }
+.chip-private {
+  background: rgba(239,68,68,0.08);
+  color: #ef4444;
+  border-color: rgba(239,68,68,0.22);
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+.chip-private svg { fill: currentColor; width: 8px; height: 8px; }
 
-.project-footer { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.project-footer { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem; }
 .project-name {
   font-family: var(--font-head);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--text);
   transition: color var(--transition);
@@ -644,10 +663,10 @@ input, textarea, select { font-family: var(--font-body); }
   display: block;
 }
 .project-name:hover { color: var(--accent); }
-.project-desc { font-size: 0.78rem; color: var(--text-muted); margin-top: 5px; line-height: 1.65; }
+.project-desc { font-size: 0.73rem; color: var(--text-muted); margin-top: 4px; line-height: 1.6; }
 
 .project-link-btn {
-  width: 34px; height: 34px;
+  width: 28px; height: 28px;
   border-radius: 50%;
   border: 1.5px solid var(--border-strong);
   display: flex;
@@ -658,7 +677,9 @@ input, textarea, select { font-family: var(--font-body); }
   transition: all var(--transition);
 }
 .project-link-btn:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
-.project-link-btn svg { fill: currentColor; width: 13px; height: 13px; }
+.project-link-btn svg { fill: currentColor; width: 11px; height: 11px; }
+.project-link-chrome { border-color: rgba(66,133,244,0.35); }
+.project-link-chrome:hover { background: #4285F4; border-color: #4285F4; }
 
 /* ════════════════════════════════════════
    RESUME PAGE
