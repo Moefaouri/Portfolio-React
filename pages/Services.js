@@ -62,7 +62,7 @@ const SERVICES = [
 const FAQ_ITEMS = [
   {
     question: "When can you start?",
-    answer: "I'm available to start immediately for freelance projects. For full-time roles I'd need a brief notice period of up to two weeks.",
+    answer: "I'm available to start immediately for freelance projects. For full-time roles I'd need a brief notice period of up to  one month.",
   },
   {
     question: "What services do you offer?",

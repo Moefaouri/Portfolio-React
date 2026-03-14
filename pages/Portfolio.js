@@ -598,6 +598,208 @@ const ThumbTaskery = () => (
   </svg>
 );
 
+/* ══════════════════════════════════════════════════════
+   ZEITOUN THUMBNAILS — clean, minimal, brand-accurate
+   Palette: #1a3d2b forest · #2d6a4f olive · #52966d fern
+            #74b49b sage · #b59a52 gold · #f4faf7 near-white
+   ══════════════════════════════════════════════════════ */
+
+/** Zeitoun Prototype — minimal e-commerce wireframe feel */
+const ThumbZeitounProto = () => (
+  <svg viewBox="0 0 620 348" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "100%", display: "block" }}>
+    <defs>
+      <linearGradient id="zt-bg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#0d1f15" />
+        <stop offset="100%" stopColor="#081410" />
+      </linearGradient>
+      <linearGradient id="zt-nav" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stopColor="#1a3d2b" />
+        <stop offset="100%" stopColor="#152e21" />
+      </linearGradient>
+      <linearGradient id="zt-hero" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#1a3d2b" />
+        <stop offset="100%" stopColor="#0f2418" />
+      </linearGradient>
+      <linearGradient id="zt-card" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#1c3e2b" />
+        <stop offset="100%" stopColor="#132a1d" />
+      </linearGradient>
+    </defs>
+
+    {/* bg */}
+    <rect width="620" height="348" fill="url(#zt-bg)" />
+
+    {/* ── browser shell ── */}
+    <rect x="20" y="16" width="580" height="316" rx="10" fill="#0f1e16" stroke="#2d6a4f" strokeOpacity="0.2" strokeWidth="1" />
+    {/* title bar */}
+    <rect x="20" y="16" width="580" height="26" rx="10" fill="#13261a" />
+    <rect x="20" y="32" width="580" height="10" fill="#13261a" />
+    <circle cx="38"  cy="29" r="3.5" fill="#ff5f57" opacity="0.65" />
+    <circle cx="51"  cy="29" r="3.5" fill="#febc2e" opacity="0.65" />
+    <circle cx="64"  cy="29" r="3.5" fill="#28c840" opacity="0.65" />
+    <rect x="82" y="22" width="180" height="14" rx="7" fill="#0a160f" />
+    <rect x="90" y="26" width="100" height="6"  rx="3" fill="#52966d" opacity="0.28" />
+
+    {/* ── sticky nav ── */}
+    <rect x="20" y="42" width="580" height="34" fill="url(#zt-nav)" />
+    {/* wordmark */}
+    <rect x="36" y="52" width="56" height="10" rx="3" fill="#b59a52" opacity="0.8" />
+    {/* nav links */}
+    {[130, 192, 254, 316, 378].map((x, i) => (
+      <rect key={i} x={x} y="55" width="44" height="6" rx="2" fill="#ffffff" opacity={i === 0 ? 0.55 : 0.22} />
+    ))}
+    {/* CTA pill */}
+    <rect x="520" y="49" width="62" height="20" rx="10" fill="#52966d" opacity="0.9" />
+    <rect x="530" y="54" width="40" height="8"  rx="3" fill="#ffffff" opacity="0.75" />
+
+    {/* ── hero ── */}
+    <rect x="20" y="76" width="580" height="126" fill="url(#zt-hero)" />
+    {/* eyebrow */}
+    <rect x="40" y="90"  width="60"  height="6"  rx="3" fill="#b59a52" opacity="0.65" />
+    {/* h1 line 1 */}
+    <rect x="40" y="102" width="196" height="14" rx="4" fill="#ffffff" opacity="0.88" />
+    {/* h1 line 2 */}
+    <rect x="40" y="120" width="160" height="10" rx="3" fill="#ffffff" opacity="0.6" />
+    {/* sub */}
+    <rect x="40" y="136" width="220" height="6"  rx="2" fill="#74b49b" opacity="0.4" />
+    <rect x="40" y="146" width="190" height="5"  rx="2" fill="#74b49b" opacity="0.28" />
+    {/* CTAs */}
+    <rect x="40"  y="158" width="82" height="22" rx="6" fill="#52966d" opacity="0.9" />
+    <rect x="130" y="158" width="74" height="22" rx="6" fill="none" stroke="#b59a52" strokeOpacity="0.55" strokeWidth="1.2" />
+
+    {/* product card float — right of hero */}
+    <rect x="432" y="84" width="148" height="110" rx="10" fill="url(#zt-card)" stroke="#52966d" strokeOpacity="0.22" strokeWidth="1" />
+    {/* bottle silhouette */}
+    <rect x="486" y="92"  width="38" height="52" rx="12" fill="#2d6a4f" opacity="0.35" />
+    <rect x="495" y="88"  width="20" height="10" rx="4"  fill="#2d6a4f" opacity="0.28" />
+    <ellipse cx="505" cy="118" rx="10" ry="16" fill="#52966d" opacity="0.2" />
+    {/* label */}
+    <rect x="442" y="150" width="80"  height="7" rx="2" fill="#ffffff" opacity="0.48" />
+    <rect x="442" y="162" width="50"  height="8" rx="3" fill="#b59a52" opacity="0.75" />
+    <rect x="442" y="175" width="128" height="14" rx="7" fill="#2d6a4f" opacity="0.65" />
+
+    {/* ── trust bar ── */}
+    <rect x="20" y="202" width="580" height="24" fill="#152b1e" />
+    {[0,1,2,3,4].map(i => (
+      <g key={i}>
+        <circle cx={54  + i*112} cy="214" r="4" fill="#52966d" opacity="0.55" />
+        <rect x={64 + i*112} y="210" width="62" height="5" rx="2" fill="#74b49b" opacity="0.3" />
+      </g>
+    ))}
+
+    {/* ── product grid (3 cards) ── */}
+    <rect x="20" y="226" width="580" height="106" fill="#0a160f" />
+    {[0,1,2,3].map(i => (
+      <g key={i}>
+        <rect x={28+i*147} y="232" width="135" height="92" rx="8" fill="#0f1e16" stroke="#2d6a4f" strokeOpacity="0.15" strokeWidth="1" />
+        {/* image zone */}
+        <rect x={28+i*147} y="232" width="135" height="52" rx="8" fill="#1a3d2b" fillOpacity="0.7" />
+        <rect x={28+i*147} y="272" width="135" height="12" fill="#0f1e16" />
+        <ellipse cx={96+i*147} cy="258" rx="16" ry="18" fill="#52966d" opacity={0.12 + i*0.02} />
+        {/* info */}
+        <rect x={38+i*147} y="290" width="76" height="5"  rx="2" fill="#c8d5b9" opacity="0.28" />
+        <rect x={38+i*147} y="300" width="48" height="7"  rx="3" fill="#b59a52" opacity="0.6"  />
+        <rect x={38+i*147} y="312" width="112" height="13" rx="6" fill="#1a3d2b" opacity="0.7"  />
+      </g>
+    ))}
+
+    {/* PROTOTYPE label */}
+    <rect x="464" y="234" width="120" height="18" rx="9" fill="#b59a52" fillOpacity="0.1" stroke="#b59a52" strokeOpacity="0.3" strokeWidth="1" />
+    <text x="524" y="247" textAnchor="middle" fill="#b59a52" fontSize="7" fontFamily="monospace" fontWeight="700" letterSpacing="1.2">PROTOTYPE</text>
+  </svg>
+);
+
+/** Zeitoun UX Research — clean document / research brief aesthetic */
+const ThumbZeitounPDF = () => (
+  <svg viewBox="0 0 620 348" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "100%", display: "block" }}>
+    <defs>
+      <linearGradient id="zpdf-bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#0b1912" />
+        <stop offset="100%" stopColor="#071210" />
+      </linearGradient>
+      <linearGradient id="zpdf-cover" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#1a3d2b" />
+        <stop offset="100%" stopColor="#112a1c" />
+      </linearGradient>
+    </defs>
+
+    <rect width="620" height="348" fill="url(#zpdf-bg)" />
+
+    {/* ── stacked pages illusion ── */}
+    <rect x="136" y="26" width="348" height="296" rx="10" fill="#0a160f" opacity="0.5" />
+    <rect x="128" y="20" width="348" height="296" rx="10" fill="#0f1e16" stroke="#2d6a4f" strokeOpacity="0.18" strokeWidth="1" />
+
+    {/* ── cover band ── */}
+    <rect x="128" y="20"  width="348" height="76" rx="10" fill="url(#zpdf-cover)" />
+    <rect x="128" y="84"  width="348" height="12" fill="#1a3d2b" />
+
+    {/* cover text */}
+    <rect x="150" y="32"  width="100" height="7"  rx="3" fill="#b59a52" opacity="0.7"  />
+    <rect x="150" y="44"  width="200" height="12" rx="4" fill="#ffffff"  opacity="0.88" />
+    <rect x="150" y="61"  width="152" height="7"  rx="3" fill="#74b49b"  opacity="0.5"  />
+    <rect x="150" y="73"  width="120" height="5"  rx="2" fill="#74b49b"  opacity="0.3"  />
+
+    {/* decorative olive motif — right of cover */}
+    <ellipse cx="430" cy="56" rx="26" ry="32" fill="#2d6a4f" opacity="0.18" />
+    <ellipse cx="430" cy="50" rx="11" ry="18" fill="#52966d" opacity="0.15" />
+    <ellipse cx="442" cy="62" rx="8"  ry="12" fill="#74b49b" opacity="0.12" />
+    {/* stem */}
+    <line x1="430" y1="30" x2="430" y2="82" stroke="#52966d" strokeOpacity="0.25" strokeWidth="1.2" />
+
+    {/* ── body: two-column layout ── */}
+
+    {/* LEFT col — TOC */}
+    <rect x="148" y="104" width="70"  height="7" rx="3" fill="#52966d" opacity="0.55" />
+    {/* TOC rows */}
+    {[118, 130, 142, 154, 166, 178, 190, 202].map((y, i) => (
+      <g key={i}>
+        <rect x="148" y={y} width={[158, 140, 152, 138, 148, 132, 144, 128][i]} height="5" rx="2" fill="#c8d5b9" opacity="0.16" />
+        <rect x={148 + [158, 140, 152, 138, 148, 132, 144, 128][i] + 4} y={y} width="18" height="5" rx="2" fill="#b59a52" opacity="0.22" />
+      </g>
+    ))}
+
+    {/* divider */}
+    <rect x="314" y="102" width="1" height="140" fill="#2d6a4f" opacity="0.25" />
+
+    {/* RIGHT col — persona cards */}
+    <rect x="328" y="104" width="68"  height="7" rx="3" fill="#52966d" opacity="0.5" />
+    {[0,1,2].map(i => (
+      <g key={i}>
+        <rect x="328" y={118 + i*40} width="136" height="32" rx="7" fill="#152b1e" stroke="#52966d" strokeOpacity="0.16" strokeWidth="1" />
+        <circle cx="344" cy={134 + i*40} r="8" fill="#2d6a4f" opacity="0.5" />
+        <rect x="358" y={126 + i*40} width="72" height="6"  rx="2" fill="#ffffff"  opacity="0.38" />
+        <rect x="358" y={136 + i*40} width="54" height="5"  rx="2" fill="#74b49b"  opacity="0.28" />
+        <rect x="420" y={126 + i*40} width="36" height="11" rx="6" fill="#b59a52"  opacity="0.14" />
+        <rect x="426" y={129 + i*40} width="24" height="5"  rx="2" fill="#b59a52"  opacity="0.4"  />
+      </g>
+    ))}
+
+    {/* ── journey map strip ── */}
+    <rect x="128" y="252" width="348" height="64" rx="0" fill="#0c1a12" />
+    <rect x="128" y="296" width="348" height="20" rx="10" fill="#0c1a12" />
+    <rect x="148" y="258" width="60"  height="6"  rx="3" fill="#52966d" opacity="0.45" />
+    {[0,1,2,3,4].map(i => (
+      <g key={i}>
+        <rect x={148 + i*64} y="270" width="56" height="36" rx="6" fill="#152b1e" stroke="#2d6a4f" strokeOpacity="0.18" strokeWidth="1" />
+        <circle cx={176 + i*64} cy="281" r="5" fill="#52966d" opacity="0.5" />
+        <rect x={154 + i*64} y="290" width="44" height="4" rx="2" fill="#c8d5b9" opacity="0.2"  />
+        <rect x={154 + i*64} y="298" width="34" height="4" rx="2" fill="#74b49b"  opacity="0.15" />
+        {i < 4 && <rect x={204 + i*64} y="281" width="8" height="2" rx="1" fill="#2d6a4f" opacity="0.35" />}
+      </g>
+    ))}
+
+    {/* PDF badge */}
+    <rect x="432" y="24" width="36" height="18" rx="5" fill="#1a3d2b" stroke="#b59a52" strokeOpacity="0.4" strokeWidth="1" />
+    <text x="450" y="36" textAnchor="middle" fill="#b59a52" fontSize="7.5" fontFamily="monospace" fontWeight="700">PDF</text>
+
+    {/* page indicator */}
+    {[0,1,2,3,4,5,6,7,8,9,10,11,12].map(i => (
+      <rect key={i} x={148 + i*26} y="320" width="18" height="3" rx="1.5"
+        fill="#2d6a4f" opacity={i === 0 ? 0.7 : 0.18} />
+    ))}
+  </svg>
+);
+
 /* ─── ICONS ─── */
 const ArrowIcon = () => (
   <svg stroke="currentColor" fill="currentColor" viewBox="0 0 256 256">
@@ -617,6 +819,11 @@ const ChromeIcon = () => (
 const LockIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
     <path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" />
+  </svg>
+);
+const PdfIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor">
+    <path d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z"/>
   </svg>
 );
 
@@ -668,6 +875,24 @@ const FRONTEND_PROJECTS = [
 
 const UIUX_PROJECTS = [
   {
+    title: "Zeitoun — Interactive Prototype",
+    description: "Fully navigable HTML prototype for a premium Jordanian olive oil brand — 9 screens including homepage, product detail, cart, checkout, and order confirmation.",
+    href: "/projects/Zeitoun_Prototype.html",
+    github: null,
+    chips: ["Prototype", "HTML / CSS", "E-Commerce UX"],
+    isProto: true,
+    Thumb: ThumbZeitounProto,
+  },
+  {
+    title: "Zeitoun — UX Research & Design Doc",
+    description: "Full UX research document — personas, journey maps, user flows, wireframe overview, and design system for a premium Jordanian olive oil e-commerce platform.",
+    href: "/projects/Zeitoun_UX_Research.pdf",
+    github: null,
+    chips: ["UX Research", "Design System", "PDF"],
+    isPdf: true,
+    Thumb: ThumbZeitounPDF,
+  },
+  {
     title: "Patient Service Requests",
     description: "Healthcare wireframe for managing patient request flows — priority queues, status tracking, and approval workflows across clinical departments.",
     href: "https://xd.adobe.com/view/75cb6e6d-5afd-4fe2-b06d-54a129994965-2098/",
@@ -704,26 +929,28 @@ const UIUX_PROJECTS = [
 
 /* ─── PROJECT CARD ─── */
 const ProjectCard = ({ project }) => {
-  const { title, description, href, github, chips, isPrivate, isChrome, Thumb } = project;
+  const { title, description, href, github, chips, isPrivate, isChrome, isProto, isPdf, Thumb } = project;
+
+  // determine the clickable destination
+  const liveHref = isPrivate ? null : href;
+
   return (
     <div className="project-card">
       <div className="project-thumb">
-        {href && !isPrivate
-          ? <a href={href} target="_blank" rel="noreferrer" style={{ display: "block", width: "100%", height: "100%" }}><Thumb /></a>
+        {liveHref
+          ? <a href={liveHref} target="_blank" rel="noreferrer" style={{ display: "block", width: "100%", height: "100%" }}><Thumb /></a>
           : <Thumb />
         }
       </div>
       <div className="project-body">
         <div className="project-chips">
           {chips.map(c => <span className="chip" key={c}>{c}</span>)}
-          {isPrivate && (
-            <span className="chip chip-private"><LockIcon /> Private</span>
-          )}
+          {isPrivate && <span className="chip chip-private"><LockIcon /> Private</span>}
         </div>
         <div className="project-footer">
           <div style={{ flex: 1, minWidth: 0 }}>
-            {href && !isPrivate
-              ? <a className="project-name" href={href} target="_blank" rel="noreferrer">{title}</a>
+            {liveHref
+              ? <a className="project-name" href={liveHref} target="_blank" rel="noreferrer">{title}</a>
               : <span className="project-name" style={{ cursor: "default" }}>{title}</span>
             }
             <p className="project-desc">{description}</p>
@@ -732,11 +959,14 @@ const ProjectCard = ({ project }) => {
             {github && (
               <a href={github} target="_blank" rel="noreferrer" className="project-link-btn" title="GitHub"><GithubIcon /></a>
             )}
-            {isChrome && href && (
-              <a href={href} target="_blank" rel="noreferrer" className="project-link-btn project-link-chrome" title="Chrome Web Store"><ChromeIcon /></a>
+            {isPdf && liveHref && (
+              <a href={liveHref} target="_blank" rel="noreferrer" className="project-link-btn project-link-pdf" title="Open PDF"><PdfIcon /></a>
             )}
-            {href && !isPrivate && !isChrome && (
-              <a href={href} target="_blank" rel="noreferrer" className="project-link-btn" title="View live"><ArrowIcon /></a>
+            {isChrome && liveHref && (
+              <a href={liveHref} target="_blank" rel="noreferrer" className="project-link-btn project-link-chrome" title="Chrome Web Store"><ChromeIcon /></a>
+            )}
+            {liveHref && !isChrome && !isPdf && (
+              <a href={liveHref} target="_blank" rel="noreferrer" className="project-link-btn" title={isProto ? "View prototype" : "View live"}><ArrowIcon /></a>
             )}
           </div>
         </div>
