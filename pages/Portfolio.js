@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Nav from "./Nav";
 import Link from "next/link";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 /* ═══════════════════════════════════════════════════════
    SVG THUMBNAILS — unified dark aesthetic, each with a
    distinct cool accent. Inspired by the violet palette.
@@ -877,7 +879,7 @@ const UIUX_PROJECTS = [
   {
     title: "Zeitoun — Interactive Prototype",
     description: "Fully navigable HTML prototype for a premium Jordanian olive oil brand — 9 screens including homepage, product detail, cart, checkout, and order confirmation.",
-    href: "/projects/Zeitoun_Prototype.html",
+    href: `${BASE_PATH}/projects/Zeitoun_Prototype.html`,
     github: null,
     chips: ["Prototype", "HTML / CSS", "E-Commerce UX"],
     isProto: true,
@@ -886,7 +888,7 @@ const UIUX_PROJECTS = [
   {
     title: "Zeitoun — UX Research & Design Doc",
     description: "Full UX research document — personas, journey maps, user flows, wireframe overview, and design system for a premium Jordanian olive oil e-commerce platform.",
-    href: "/projects/Zeitoun_UX_Research.pdf",
+    href: `${BASE_PATH}/projects/Zeitoun_UX_Research.pdf`,
     github: null,
     chips: ["UX Research", "Design System", "PDF"],
     isPdf: true,

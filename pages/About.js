@@ -3,6 +3,8 @@ import Image from "next/image";
 import Nav from "./Nav";
 import React, { useState, useEffect } from "react";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const ROLES = ["Frontend Developer", "UI/UX Designer"];
 const TYPING_SPEED   = 90;
 const DELETING_SPEED = 45;
@@ -112,7 +114,7 @@ const About = () => {
                 <div className="portrait-accent-dots" />
                 <div className="portrait-frame">
                   <Image
-                    src="/images/color-white.png"
+                    src={`${BASE_PATH}/images/color-white.png`}
                     width={220}
                     height={280}
                     alt="Mohammad Elfauri"

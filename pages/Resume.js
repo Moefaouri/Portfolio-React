@@ -2,6 +2,8 @@ import Nav from "./Nav";
 import React from "react";
 import Link from "next/link";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 /* ── Data from CV ── */
 const SKILLS = [
   { label: "React.js / Next.js", pct: 92 },
@@ -94,7 +96,7 @@ const Resume = () => (
       <div className="page-header">
         <h3>Online Resume</h3>
         <Link
-          href="/documents/Mohammad_Elfauri_CV.pdf"
+          href={`${BASE_PATH}/documents/Mohammad_Elfauri_CV.pdf`}
           className="btn-primary-custom"
           download
           style={{ display: "inline-flex", margin: "0 auto" }}

@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const NAV_LINKS = [
   {
     href: "/",
@@ -115,7 +117,7 @@ const Nav = () => {
           <div className="profile-avatar-wrap">
             <div className="profile-avatar-ring">
               <Image
-                src="/images/color-primary.png"
+                src={`${BASE_PATH}/images/color-primary.png`}
                 width={84}
                 height={84}
                 alt="Mohammad Elfauri"
