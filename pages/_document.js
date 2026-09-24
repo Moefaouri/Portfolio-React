@@ -1,7 +1,10 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
 const primarySiteUrl = "https://moelfaouriportfolio.vercel.app";
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || primarySiteUrl;
+const mirrorSiteUrl = "https://mohammad-elfauri-portfolio.moework190.chatgpt.site";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.SITE_STATIC_EXPORT === "true" ? mirrorSiteUrl : primarySiteUrl);
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const title = "Mohammad Elfauri | Front-End Developer & UI/UX Designer";
 const description =
